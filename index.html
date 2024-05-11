@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Иконки с разными размерами -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+         <!-- Иконка возле названия заголовочного файла -->
+        <link rel="manifest" href="./favicon/site.webmanifest" alt="logo"/>
+        <!-- определяет цвет, который будет использоваться в качестве фона для плитки приложения в Windows -->
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <!--  Этот тег определяет цвет темы для мобильных браузеров -->
+        <meta name="theme-color" content="#ffffff" />
+        <!--  Этот тег определяет параметры просмотра страницы на мобильных устройствах. Он указывает браузеру, чтобы ширина страницы соответствовала ширине устройства, а начальное увеличение (масштаб) было установлено на 1.0, что обеспечивает правильное отображение контента на мобильных устройствах без масштабирования -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Интернет-магазин ювелирных украшений «Adamas» — Главная</title>
+        <!-- стиль текста -->
+        <link rel="stylesheet" href="styles/globals.css" />       
+        <!-- Шапка сайта -->
+        <link rel="stylesheet" href="styles/header.css" />
+        <!-- Первая часть сайта -->
+        <link rel="stylesheet" href="styles/hero.css" />
+        <!-- Продукты после первой части сайта -->
+        <link rel="stylesheet" href="styles/product.css" />
+        <!-- скидка 70% -->
+        <link rel="stylesheet" href="styles/banner.css" />
+        <!-- скидки в конце сайта -->
+        <link rel="stylesheet" href="styles/sm-banner.css" />
+        <!-- поле с рассылкой -->
+        <link rel="stylesheet" href="styles/newsletter.css" />
+        <!-- нижняя часть сайта -->
+        <link rel="stylesheet" href="styles/footer.css" />
+        <!-- Мобильная версия -->
+        <link rel="stylesheet" href="styles/responsive.css" />
+    </head>
+    <body>
+        <section id="header">
+            <a href="index.html"><img id="logo" src="img/logo.svg" alt="logotip" /></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li id="bag-og">
+                        <a href="cart.html"><img class="bag-icon" src="img/icons/shopping-bag.png" alt="cart" /></a>
+                    </li>
+                    <img id="close" class="close-icon" src="img/icons/x.png" alt="close-icon" />
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><img class="bag-icon" src="img/icons/shopping-bag.png" alt="bag-icon"/></a>
+                <img id="bar" class="menu-icon" src="img/icons/bars.png" alt="menu-icon"/>
+            </div>
+        </section>
+        <!-- Начало сайта -->
+        <section id="hero">
+            <h4>Трейд-ин-предложение</h4>
+            <h2>Супервыгодные предложения</h2>
+            <h1>На всю продукцию</h1>
+            <button>Купить сейчас</button>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <!-- 4 продукта -->
+            <h2>Продукция</h2>
+            <p>Летний дизайн новой коллекции</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <!-- сам продукт -->
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <!-- звездочки -->
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon"  /></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <!-- продукт -->
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon" /></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <!-- продукт -->
+                    <img class="producto" src="img/products/f1.png" alt="product"/>
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="satr"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon"/></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <!-- продукт -->
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <!-- корзина -->
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon" /></a>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------------------------------->
+                <!-- скидка -->
+                <div id="banner" class="section-m1">
+                    <h4></h4>
+                    <h2>Скидки до <span>70%</span> - на все кольца и серьги</h2>
+                    <button class="normal">Узнать больше</button>
+                </div>
+                <div class="pro">
+                    <!-- продукт -->
+                    <img class="producto" src="img/products/f1.png" alt="product"/>
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <!-- продукт -->
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon" /></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon" /></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon" /></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img class="producto" src="img/products/f1.png" alt="product" />
+                    <div class="des">
+                        <h5>BALANCE коллекция</h5>
+                        <div class="star">
+                            <img class="star-icon" src="img/icons/star.png" alt="star" />
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                            <img class="star-icon" src="img/icons/star.png" alt="star"/>
+                        </div>
+                        <h4>173$</h4>
+                    </div>
+                    <div class="cart-icon-container">
+                        <a href="#"><img class="cart-icon" src="img/icons/cart.png" alt="cart-icon"/></a>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------------->
+        </section>
+        <!-- скидка1 -->
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>СУМАШЕДШЕЕ ПРЕДЛОЖЕНИЕ</h4>
+                <h2>покупай 1 - 2 в подарок</h2>
+                <span>Лучшие кольца в нашем магазине</span>
+                <button class="white">Узнать больше</button>
+            </div>
+            <!-- скидка2 -->
+            <div class="banner-box banner-box2">
+                <h4>Весна/Лето</h4>
+                <h2>предстоящий сезон</h2>
+                <span>Лучшие кольца в нашем магазине</span>
+                <button class="white">Коллекция</button>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1">
+            <!-- Рассылка -->
+            <div class="newstext">
+                <h4>Подписаться на рассылку</h4>
+                <p>Получай уведомление об обновлении и <span>СПЕЦИАЛЬНЫХ ПРЕДЛОЖЕНИЯХ</span></p>
+            </div>
+            <div class="form">
+                <form class="follow" action="">
+                    <input required type="text" title="Пример ввода '...@gmail.com'" pattern="^[a-z]+@+(gmail|mail|yandex)\.(com|.ru|.by)" placeholder="Ваш электронный адрес" />
+                    <button type="submit" class="normal">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <!-- где находится магазин -->
+            <div class="col">
+                <img src="img/logo.svg" alt="" />
+                <p><strong>Адрес:</strong> г.Минск, ул.Белорусская 19</p>
+                <p><strong>Телефон:</strong> +375 33 678 89 04</p>
+                <p><strong>Время работы:</strong> 10:00 - 18:00, Пн.- Сб.</p>
+                <div class="follow">
+                    <h4>Следите за нами</h4>
+                    <div class="icon">
+                        <img class="footer-icon" src="img/icons/facebook.png" alt="facebook" />
+                        <img class="footer-icon" src="img/icons/twitter.png" alt="twitter"/>
+                        <img class="footer-icon" src="img/icons/instagram.png" alt="instagram"/>
+                        <img class="footer-icon" src="img/icons/youtube.png" alt="youtube"/>
+                        <img class="footer-icon" src="img/icons/pinterest.png" alt="pinterest"/>
+                    </div>
+                </div>
+            </div>
+            <!-- о компании -->
+            <!-- где скачать приложение -->
+            <div class="col install">
+                <h4>Скачать приложение</h4>
+                <p>Из App Store или Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="app" />
+                    <img src="img/pay/play.jpg" alt="play" />
+                </div>
+                <!-- конец -->
+                <!-- Карты доступные для оплаты -->
+                <p>Способы оплаты</p>
+                <img src="img/pay/pay.png" alt="pay" />
+            </div>
+            <!-- конец -->
+            <!-- значок оффициал -->
+            <div class="copyright">
+                <p>2024, Интернет-магазин ювелирных украшений «Adamas»</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

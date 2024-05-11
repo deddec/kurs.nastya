@@ -1,0 +1,84 @@
+/* Стиль для верней части */
+#header {
+    /* чтобы управлять расположением дочерних элементов. */
+    display: flex; 
+    /* Выравнивает элементы по центру по вертикали. */
+    align-items: center;
+    /* Распределяет пространство между элементами, размещая их в начале и в конце контейнера. */
+    justify-content: space-between;
+    /* отступы */
+    padding: 20px 80px;
+    background: #ffffffb5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* Устанавливает порядок слоя для элемента. */
+    z-index: 99;
+    /* Закрепляет элемент вверху страницы при прокрутке. */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* Навигационное меню */
+#navbar {
+    display: flex;
+    /* Выравнивает элементы по центру по вертикали и горизонтали. */
+    align-items: center;
+    justify-content: center;
+}
+/* список в меню */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+/* для ссылок внутри элементов списка нав меню */
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    /* Добавляет плавное изменение стилей при наведении на ссылку */
+    transition: 0.3s ease;
+}
+/* при наведении и когда активны */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover:after {
+    /* Он добавляет псевдоэлементу пустое содержимое */
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    /*  Позиционируется абсолютно относительно родительского элемента */
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.bag-icon {
+    width: 20px;
+}
+.close-icon {
+    /*  задает его начальное свойство */
+    display: none;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+#mobile {
+    display: none;
+    align-items: center;
+}
+#mobile .menu-icon {
+    width: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#logo {
+    display: block;
+    height: 80%;
+    width: 50%;
+}

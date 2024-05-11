@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Интернет-магазин ювелирных украшений «Adamas» — Корзина</title>
+        <!-- значения для всех -->
+        <link rel="stylesheet" href="styles/globals.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/hero.css" />
+        <link rel="stylesheet" href="styles/newsletter.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/responsive.css" />
+        <link rel="stylesheet" href="styles/contact/contact.css" />
+        <link rel="stylesheet" href="styles/cart/cart.css" />
+    </head>
+    <body>
+        <section id="header">
+            <a href="index.html"><img id="logo" src="img/logo.svg" alt="logotip"/></a>
+            <div>
+                <!-- нав меню -->
+                <ul id="navbar">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li id="bag-og">
+                        <a href="cart.html"><img class="bag-icon" src="img/icons/shopping-bag.png" alt="cart" /></a>
+                    </li>
+                    <img id="close" class="close-icon" src="img/icons/x.png" alt="close-icon"/>
+                </ul>
+            </div>
+            <!-- для мобильной версии -->
+            <div id="mobile">
+                <a href="cart.html"><img class="bag-icon" src="img/icons/shopping-bag.png" alt="cart" /></a>
+                <img id="bar" class="menu-icon" src="img/icons/bars.png" alt="menu-icon" />
+            </div>
+        </section>
+        <section id="page-header">
+            <!-- начало сайта -->
+            <h2>#let's_talk</h2>
+            <p>ОСТАВЬТЕ СООБЩЕНИЕ, мы будем рады получить от вас весточку!</p>
+        </section>
+        <section id="cart" class="section-p1">
+            <!-- --------------------------------------------------------------------Корзина -->
+            <table width="100%">
+                <thead>
+                    <!-- описание что находится в корзине -->
+                    <tr>
+                        <td>Удалить</td>
+                        <td>Изображение</td>
+                        <td>Продукт</td>
+                        <td>Цена</td>
+                        <td>Количество</td>
+                        <td>Итого</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- продукты в корзине -->
+                    <tr>
+                        <td>
+                            <!-- крестик -->
+                            <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon" /></a>
+                        </td>
+                        <td><img src="img/products/f1.jpg" alt="products" /></td>
+                        <td>серьги из коллекции Balance</td>
+                        <td>173$</td>
+                        <td><input type="number" value="1" /></td>
+                        <td>173$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon"/></a>
+                        </td>
+                        <td><img src="img/products/f2.jpg" alt="products"/></td>
+                        <td>серьги из коллекции Balance</td>
+                        <td>173$</td>
+                        <td><input type="number" value="1" /></td>
+                        <td>173$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon"/></a>
+                        </td>
+                        <td><img src="img/products/f3.jpg" alt="products" /></td>
+                        <td>серьги из коллекции Balance</td>
+                        <td>173$</td>
+                        <td><input type="number" value="1" /></td>
+                        <td>173$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Использовать купон</h3>
+                <div>
+                    <!-- email -->
+                    <input type="text" placeholder="Введите купон" />
+                    <button class="normal">Использовать</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Общее количество</h3>
+                <table>
+                    <tr>
+                        <td>Итог корзины</td>
+                        <td>$ 519</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка</td>
+                        <td>Бесплатно</td>
+                    </tr>
+                    <tr>
+                        <td>Итог</td>
+                        <td>519$</td>
+                    </tr>
+                </table>
+                <button class="normal">Перейти к оформлению заказа</button>
+            </div>
+        </section>
+        <!-- --------------------------------------------------------------------Конец Корзины------------------------------ -->
+        <!-- рассылка -->
+        <section id="newsletter" class="section-p1">
+            <div class="newstext">
+                <h4>Подпишись на рассылку</h4>
+                <p>Получай уведомление об обновлении и <span>СПЕЦИАЛЬНЫХ ПРЕДЛОЖЕНИЯХ</span></p>
+            </div>
+            <div class="form">
+                <form class="follow" action="">
+                    <input required type="text" title="Пример ввода '...@gmail.com'" pattern="^[a-z]+@+(gmail|mail|yandex)\.(com|.ru|.by)" placeholder="Ваш электронный адрес" />
+                    <button type="submit" class="normal">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <!-- нижняя часть сайта -->
+            <div class="col">
+                <img class="logo" src="img/logo.svg" alt="logotip" />
+                <h4>Контакты</h4>
+                <p><strong>Адрес:</strong> г.Минск, ул.Белорусская 19</p>
+                <p><strong>Телефон:</strong> +375 33 678 89 04</p>
+                <p><strong>Время работы:</strong> 10:00 - 18:00, Пн.- Сб.</p>
+                <div class="follow">
+                    <h4>Следите за нами</h4>
+                    <div class="icon">
+                        <img class="footer-icon" src="img/icons/facebook.png" alt="facebook" />
+                        <img class="footer-icon" src="img/icons/twitter.png" alt="twitter" />
+                        <img class="footer-icon" src="img/icons/instagram.png" alt="instagram" />
+                        <img class="footer-icon" src="img/icons/youtube.png" alt="youtube"/>
+                        <img class="footer-icon" src="img/icons/pinterest.png" alt="pinterest" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col install">
+                <h4>Скачать приложение</h4>
+                <p>Из App Store или Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="app" />
+                    <img src="img/pay/play.jpg" alt="play" />
+                </div>
+                <p>Способы оплаты</p>
+                <img src="img/pay/pay.png" alt="pay" />
+            </div>
+            <div class="copyright">
+                <p>2024, Интернет-магазин ювелирных украшений «Adamas»</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
