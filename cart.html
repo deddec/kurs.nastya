@@ -26,10 +26,10 @@
             <div>
                 <!-- нав меню -->
                 <ul id="navbar">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="shop.html">Магазин</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
 
-                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li id="bag-og">
                         <a href="cart.html"><img class="bag-icon" src="img/icons/shopping-bag.png" alt="cart" /></a>
                     </li>
@@ -45,7 +45,7 @@
         <section id="page-header">
             <!-- начало сайта -->
             <h2>#let's_talk</h2>
-            <p>ОСТАВЬТЕ СООБЩЕНИЕ, мы будем рады получить от вас весточку!</p>
+            <p>LEAVE A MESSAGE, We love to hear from you!</p>
         </section>
         <section id="cart" class="section-p1">
             <!-- --------------------------------------------------------------------Корзина -->
@@ -53,12 +53,12 @@
                 <thead>
                     <!-- описание что находится в корзине -->
                     <tr>
-                        <td>Удалить</td>
-                        <td>Изображение</td>
-                        <td>Продукт</td>
-                        <td>Цена</td>
-                        <td>Количество</td>
-                        <td>Итого</td>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,86 +69,84 @@
                             <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon" /></a>
                         </td>
                         <td><img src="img/products/f1.jpg" alt="products" /></td>
-                        <td>серьги из коллекции Balance</td>
-                        <td>173$</td>
+                        <td>earrings from the Balance collection</td>
+                        <td>$173</td>
                         <td><input type="number" value="1" /></td>
-                        <td>173$</td>
+                        <td>$173</td>
                     </tr>
                     <tr>
                         <td>
                             <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon"/></a>
                         </td>
                         <td><img src="img/products/f2.jpg" alt="products"/></td>
-                        <td>серьги из коллекции Balance</td>
-                        <td>173$</td>
+                        <td>earrings from the Balance collection</td>
+                        <td>$173</td>
                         <td><input type="number" value="1" /></td>
-                        <td>173$</td>
+                        <td>$173</td>
                     </tr>
                     <tr>
                         <td>
                             <a href="#"><img id="close" class="close-icon-cart" src="img/icons/x.png" alt="close-icon"/></a>
                         </td>
                         <td><img src="img/products/f3.jpg" alt="products" /></td>
-                        <td>серьги из коллекции Balance</td>
-                        <td>173$</td>
+                        <td>earrings from the Balance collection</td>
+                        <td>$173</td>
                         <td><input type="number" value="1" /></td>
-                        <td>173$</td>
+                        <td>$173</td>
                     </tr>
                 </tbody>
             </table>
         </section>
         <section id="cart-add" class="section-p1">
             <div id="coupon">
-                <h3>Использовать купон</h3>
+                <h3>Apply Coupon</h3>
                 <div>
                     <!-- email -->
-                    <input type="text" placeholder="Введите купон" />
-                    <button class="normal">Использовать</button>
+                    <input type="text" placeholder="Enter Your Coupon" />
+                    <button class="normal">Apply</button>
                 </div>
             </div>
             <div id="subtotal">
-                <h3>Общее количество</h3>
+                <h3>Cart Totals</h3>
                 <table>
                     <tr>
-                        <td>Итог корзины</td>
+                        <td>Cart Subtotal</td>
                         <td>$ 519</td>
                     </tr>
                     <tr>
-                        <td>Доставка</td>
-                        <td>Бесплатно</td>
+                        <td>Shipping</td>
+                        <td>Free</td>
                     </tr>
                     <tr>
-                        <td>Итог</td>
-                        <td>519$</td>
+                        <td>Total</td>
+                        <td>$ 519</td>
                     </tr>
                 </table>
-                <button class="normal">Перейти к оформлению заказа</button>
+                <button class="normal">Proceed to checkout</button>
             </div>
         </section>
         <!-- --------------------------------------------------------------------Конец Корзины------------------------------ -->
         <!-- рассылка -->
         <section id="newsletter" class="section-p1">
             <div class="newstext">
-                <h4>Подпишись на рассылку</h4>
-                <p>Получай уведомление об обновлении и <span>СПЕЦИАЛЬНЫХ ПРЕДЛОЖЕНИЯХ</span></p>
+                <h4>Sign Up For Newsletter</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
             </div>
             <div class="form">
-                <form class="follow" action="">
-                    <input required type="text" title="Пример ввода '...@gmail.com'" pattern="^[a-z]+@+(gmail|mail|yandex)\.(com|.ru|.by)" placeholder="Ваш электронный адрес" />
-                    <button type="submit" class="normal">Подписаться</button>
-                </form>
+                <input type="text" type="email" placeholder="Your email address" required />
+                <button class="normal">Sign Up</button>
             </div>
         </section>
         <footer class="section-p1">
             <!-- нижняя часть сайта -->
             <div class="col">
                 <img class="logo" src="img/logo.svg" alt="logotip" />
-                <h4>Контакты</h4>
-                <p><strong>Адрес:</strong> г.Минск, ул.Белорусская 19</p>
-                <p><strong>Телефон:</strong> +375 33 678 89 04</p>
-                <p><strong>Время работы:</strong> 10:00 - 18:00, Пн.- Сб.</p>
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Phone:</strong> +01 222 365 //(+91) 01 2345 6789</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
                 <div class="follow">
-                    <h4>Следите за нами</h4>
+                    <h4>Follow Us</h4>
                     <div class="icon">
                         <img class="footer-icon" src="img/icons/facebook.png" alt="facebook" />
                         <img class="footer-icon" src="img/icons/twitter.png" alt="twitter" />
@@ -158,15 +156,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="col install">
-                <h4>Скачать приложение</h4>
-                <p>Из App Store или Google Play</p>
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
                 <div class="row">
                     <img src="img/pay/app.jpg" alt="app" />
                     <img src="img/pay/play.jpg" alt="play" />
                 </div>
-                <p>Способы оплаты</p>
+                <p>Secure Payment Gateways</p>
                 <img src="img/pay/pay.png" alt="pay" />
             </div>
             <div class="copyright">
